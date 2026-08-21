@@ -1,0 +1,1180 @@
+/* =====================================================
+   FARMER DASHBOARD
+===================================================== */
+
+.farmer-dashboard{
+    min-height:100vh;
+    background:linear-gradient(180deg,#eef7ef,#f8fbf8);
+}
+
+/* Hero Section */
+
+.top-section{
+    background:linear-gradient(135deg,#2e7d32,#43a047);
+    color:#fff;
+    padding:40px 70px 70px;
+    border-bottom-left-radius:40px;
+    border-bottom-right-radius:40px;
+    box-shadow:0 8px 25px rgba(0,0,0,.18);
+}
+
+.dashboard-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.dashboard-header h1{
+    font-size:48px;
+    font-weight:800;
+    margin:0;
+}
+
+.dashboard-header p{
+    font-size:18px;
+    margin-top:8px;
+    color:#edf8ee;
+}
+
+.logout-btn{
+    background:#fff;
+    color:#2e7d32;
+    border:none;
+    padding:12px 26px;
+    border-radius:30px;
+    font-size:15px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+    box-shadow:0 4px 12px rgba(0,0,0,.15);
+}
+
+.logout-btn:hover{
+    background:#1b5e20;
+    color:#fff;
+    transform:translateY(-2px);
+}
+
+.welcome-section{
+    text-align:center;
+    margin-top:45px;
+}
+
+.welcome-section h2{
+    font-size:36px;
+    margin-bottom:12px;
+}
+
+.welcome-section p{
+    font-size:18px;
+    color:#eaf7ea;
+}
+
+/* Cards */
+
+.menu-cards{
+    max-width:1200px;
+    margin:-45px auto 0;
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:30px;
+    padding:30px;
+}
+
+.menu-card{
+    background:#fff;
+    border-radius:22px;
+    padding:35px;
+    text-align:center;
+    box-shadow:0 12px 28px rgba(0,0,0,.10);
+    transition:.35s;
+    position:relative;
+    overflow:hidden;
+    border-top:6px solid #2e7d32;
+}
+
+.menu-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 18px 35px rgba(0,0,0,.18);
+}
+
+.menu-card::before{
+    content:"";
+    position:absolute;
+    width:160px;
+    height:160px;
+    background:rgba(46,125,50,.06);
+    border-radius:50%;
+    top:-60px;
+    right:-60px;
+}
+
+.card-icon{
+    width:85px;
+    height:85px;
+    line-height:85px;
+    border-radius:50%;
+    font-size:40px;
+    margin:auto;
+    margin-bottom:20px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:#fff;
+}
+
+.farm-icon{
+    background:#2e7d32;
+}
+
+.crop-icon{
+    background:#43a047;
+}
+
+.expense-icon{
+    background:#fb8c00;
+}
+
+.report-icon{
+    background:#1976d2;
+}
+
+.menu-card h3{
+    font-size:24px;
+    color:#222;
+    margin-bottom:10px;
+}
+
+.menu-card p{
+    font-size:15px;
+    color:#666;
+    line-height:1.6;
+    margin-bottom:25px;
+}
+
+.card-buttons{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:12px;
+    margin-top:auto;
+    flex-wrap:nowrap;
+}
+
+.card-buttons button{
+    flex:1;
+}
+
+.card-buttons button,
+.predict-btn{
+
+    padding:11px 18px;
+    border:none;
+    border-radius:10px;
+    font-size:14px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+    color:#fff;
+    background:#2e7d32;
+}
+
+.card-buttons button:hover,
+.predict-btn:hover{
+    background:#1b5e20;
+    transform:translateY(-2px);
+}
+
+.report-card{
+    border-top:6px solid #1976d2;
+}
+
+@media(max-width:900px){
+
+    .menu-card{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    min-height:340px;
+}
+.menu-cards{
+grid-template-columns:1fr;
+padding:20px;
+}
+
+.top-section{
+padding:30px;
+}
+
+.dashboard-header{
+flex-direction:column;
+gap:20px;
+text-align:center;
+}
+
+.dashboard-header h1{
+font-size:38px;
+}
+
+}
+
+/* =====================================================
+   LOGIN & REGISTER
+===================================================== */
+
+.auth-page{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:80px;
+    background:#f8faf7;
+    padding:30px;
+}
+
+.auth-left{
+    width:380px;
+}
+
+.auth-left h1{
+    font-size:48px;
+    color:#1b5e20;
+    font-weight:800;
+    margin-bottom:15px;
+}
+
+.auth-left h3{
+    font-size:28px;
+    color:#333;
+    margin-bottom:10px;
+}
+
+.auth-left p{
+    color:#666;
+    font-size:18px;
+    line-height:1.6;
+}
+
+.auth-box{
+    background:#fff;
+    border-radius:22px;
+    box-shadow:0 15px 40px rgba(0,0,0,.12);
+}
+
+.login-page{
+    width:420px;
+    padding:45px;
+}
+
+.register-page{
+    width:520px;
+    padding:45px 55px;
+}
+
+.auth-box h2{
+    text-align:center;
+    color:#1b5e20;
+    font-size:30px;
+    margin-bottom:30px;
+}
+
+.auth-box label{
+    display:block;
+    margin-bottom:8px;
+    color:#333;
+    font-weight:600;
+}
+
+.auth-box .form-group{
+    margin-bottom:20px;
+}
+
+.auth-box .form-control{
+    width:100%;
+    height:48px;
+    border:1px solid #ddd;
+    border-radius:10px;
+    padding:0 15px;
+    font-size:15px;
+    background:#fafafa;
+}
+
+.auth-box .form-control:focus{
+    outline:none;
+    background:#fff;
+    border-color:#2e7d32;
+    box-shadow:0 0 0 3px rgba(46,125,50,.15);
+}
+
+.login-btn{
+    width:100%;
+    height:48px;
+    border:none;
+    border-radius:10px;
+    background:#2e7d32;
+    color:#fff;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.login-btn:hover{
+    background:#1b5e20;
+}
+
+.register-section{
+    text-align:center;
+    margin-top:25px;
+}
+
+.register-btn{
+    width:100%;
+    height:45px;
+    border-radius:10px;
+    background:#fff;
+    color:#2e7d32;
+    border:1px solid #2e7d32;
+    font-weight:600;
+    cursor:pointer;
+}
+
+.register-btn:hover{
+    background:#2e7d32;
+    color:#fff;
+}
+
+.error-text{
+    color:#d32f2f;
+    margin-top:6px;
+    font-size:13px;
+}
+
+.success-message{
+    margin-top:18px;
+    text-align:center;
+    color:#2e7d32;
+    font-weight:600;
+}
+/* =====================================================
+   FARMER DASHBOARD
+===================================================== */
+
+.farmer-dashboard{
+    min-height:100vh;
+    background:#f5f9f5;
+}
+
+/* Header */
+
+.top-section{
+    background:#2e7d32;
+    color:#fff;
+    padding:35px 70px 55px;
+}
+
+.dashboard-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.dashboard-header h1{
+    font-size:42px;
+    margin:0;
+}
+
+.dashboard-header p{
+    margin-top:8px;
+    font-size:18px;
+    color:#eaf7ea;
+}
+
+.logout-btn{
+    background:#fff;
+    color:#2e7d32;
+    border:none;
+    padding:12px 28px;
+    border-radius:10px;
+    font-size:15px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.logout-btn:hover{
+    background:#f2f2f2;
+}
+
+/* Welcome */
+
+.welcome-section{
+    text-align:center;
+    margin-top:35px;
+}
+
+.welcome-section h2{
+    font-size:32px;
+    margin-bottom:8px;
+}
+
+.welcome-section p{
+    font-size:18px;
+    color:#e8f5e9;
+}
+
+/* Cards */
+
+.menu-cards{
+    padding:50px;
+    display:flex;
+    justify-content:center;
+    gap:35px;
+    flex-wrap:wrap;
+}
+
+.menu-card{
+    width:300px;
+    height:270px;
+    background:#fff;
+    border-radius:20px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    box-shadow:0 10px 25px rgba(0,0,0,.10);
+    transition:.3s;
+}
+
+.menu-card:hover{
+    transform:translateY(-8px);
+}
+
+.card-icon{
+    font-size:48px;
+    margin-bottom:18px;
+}
+
+.farm-icon{
+    color:#2e7d32;
+}
+
+.crop-icon{
+    color:#43a047;
+}
+
+.expense-icon{
+    color:#f9a825;
+}
+
+.report-icon{
+    color:#1565c0;
+}
+
+.report-card{
+    border-top:5px solid #1565c0;
+}
+
+.menu-card h3{
+    font-size:22px;
+    color:#333;
+    margin-bottom:8px;
+}
+
+.menu-card p{
+    color:#666;
+    text-align:center;
+    padding:0 18px;
+}
+
+/* Buttons */
+
+.card-buttons{
+    display:flex;
+    gap:10px;
+    margin-top:18px;
+}
+
+.card-buttons button,
+.predict-btn{
+    border:none;
+    background:#2e7d32;
+    color:#fff;
+    border-radius:8px;
+    padding:10px 16px;
+    cursor:pointer;
+    font-size:14px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.card-buttons button:hover,
+.predict-btn:hover{
+    background:#1b5e20;
+}
+
+@media(max-width:900px){
+
+.top-section{
+    padding:30px;
+}
+
+.dashboard-header{
+    flex-direction:column;
+    gap:20px;
+    text-align:center;
+}
+
+.menu-cards{
+    padding:30px;
+}
+
+}
+/* =====================================================
+   FARM / CROP / EXPENSE ENTRY FORM
+===================================================== */
+
+.form-page{
+    min-height:100vh;
+    background:linear-gradient(135deg,#edf7ed,#f9fcf7);
+    display:flex;
+    flex-direction:column;
+}
+
+.page-header{
+    width:100%;
+    height:80px;
+    background:#2e7d32;
+    color:#fff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    box-shadow:0 4px 12px rgba(0,0,0,.15);
+}
+
+.page-header-content{
+    width:92%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.page-header h1{
+    margin:0;
+    font-size:30px;
+    font-weight:700;
+}
+
+.page-header p{
+    margin-top:5px;
+    font-size:15px;
+}
+
+.form-wrapper{
+    flex:1;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:40px;
+}
+
+.form-card{
+    width:700px;
+    background:#fff;
+    border-radius:20px;
+    padding:35px;
+    box-shadow:0 15px 35px rgba(0,0,0,.12);
+}
+
+.form-title{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    margin-bottom:25px;
+}
+
+.title-icon{
+    font-size:40px;
+    color:#43a047;
+}
+
+.form-title h2{
+    margin:0;
+    color:#1b5e20;
+    font-size:30px;
+}
+
+.form-title p{
+    margin-top:5px;
+    color:#666;
+}
+
+.form-group{
+    margin-bottom:18px;
+}
+
+.form-group label{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    font-weight:600;
+    color:#333;
+    margin-bottom:8px;
+}
+
+.label-icon{
+    color:#2e7d32;
+}
+
+.form-control{
+    width:100%;
+    height:48px;
+    border:1px solid #d9d9d9;
+    border-radius:10px;
+    padding:0 15px;
+    font-size:15px;
+    background:#fafafa;
+}
+
+.form-control:focus{
+    outline:none;
+    background:#fff;
+    border-color:#2e7d32;
+    box-shadow:0 0 0 3px rgba(46,125,50,.15);
+}
+
+.readonly{
+    background:#eceff1;
+    font-weight:600;
+}
+
+/* ================= BUTTONS ================= */
+
+.form-buttons{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:12px;
+    margin-top:25px;
+    flex-wrap:wrap;
+}
+
+.primary-btn,
+.secondary-btn{
+    width:130px;
+    height:42px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    gap:6px;
+
+    border-radius:8px;
+    border:none;
+
+    font-size:15px;
+    font-weight:600;
+
+    cursor:pointer;
+    transition:.3s;
+    padding:0;
+}
+
+/* Save */
+
+.primary-btn{
+    background:#2e7d32;
+    color:#fff;
+}
+
+.primary-btn:hover{
+    background:#1b5e20;
+}
+
+/* Reset & Dashboard */
+
+.secondary-btn{
+    background:#fff;
+    color:#2e7d32;
+    border:1px solid #2e7d32;
+}
+
+.secondary-btn:hover{
+    background:#2e7d32;
+    color:#fff;
+}
+
+/* Icons */
+
+.primary-btn svg,
+.secondary-btn svg{
+    font-size:14px;
+}
+/* =====================================================
+   FARM / CROP / EXPENSE LIST PAGE
+===================================================== */
+
+.list-page{
+    min-height:100vh;
+    background:#f4f8f4;
+    padding:40px;
+}
+
+.list-card{
+    width:95%;
+    max-width:1200px;
+    margin:auto;
+    background:#fff;
+    border-radius:20px;
+    padding:30px;
+    box-shadow:0 10px 30px rgba(0,0,0,.12);
+}
+
+.list-title{
+    text-align:center;
+    color:#1b5e20;
+    font-size:30px;
+    font-weight:700;
+    margin-bottom:25px;
+}
+
+.list-table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:15px;
+}
+
+.list-table thead{
+    background:#2e7d32;
+    color:#fff;
+}
+
+.list-table th{
+    padding:14px;
+    font-size:15px;
+    font-weight:600;
+    text-align:center;
+}
+
+.list-table td{
+    padding:14px;
+    border-bottom:1px solid #e6e6e6;
+    text-align:center;
+    font-size:14px;
+}
+
+.list-table tbody tr:nth-child(even){
+    background:#f8fbf8;
+}
+
+.list-table tbody tr:hover{
+    background:#eef8ee;
+}
+
+.action-buttons{
+    display:flex;
+    justify-content:center;
+    gap:8px;
+    flex-wrap:wrap;
+}
+
+.edit-btn,
+.delete-btn,
+.predict-btn,
+.report-btn{
+    border:none;
+    border-radius:7px;
+    padding:8px 15px;
+    color:#fff;
+    font-size:13px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.edit-btn{
+    background:#1565c0;
+}
+
+.edit-btn:hover{
+    background:#0d47a1;
+}
+
+.delete-btn{
+    background:#d32f2f;
+}
+
+.delete-btn:hover{
+    background:#b71c1c;
+}
+
+.predict-btn{
+    background:#ef6c00;
+}
+
+.predict-btn:hover{
+    background:#e65100;
+}
+
+.report-btn{
+    background:#2e7d32;
+}
+
+.report-btn:hover{
+    background:#1b5e20;
+}
+
+.return-btn-container{
+    display:flex;
+    justify-content:center;
+    margin-top:30px;
+}
+
+.return-btn{
+    background:#1565c0;
+    color:#fff;
+    border:none;
+    border-radius:8px;
+    padding:10px 24px;
+    font-size:14px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.return-btn:hover{
+    background:#0d47a1;
+}
+
+@media(max-width:900px){
+
+.list-page{
+    padding:20px;
+}
+
+.list-card{
+    overflow-x:auto;
+}
+
+.list-table{
+    min-width:900px;
+}
+
+}
+/* ================= Expense Compact View ================= */
+
+.expense-page .form-card,
+.form-card {
+    max-width: 750px;
+    padding: 30px;
+}
+
+
+/* Title */
+
+.form-title h2 {
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+
+.form-title p {
+    font-size: 14px;
+}
+
+
+/* Labels */
+
+.form-group label {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+
+/* Inputs */
+
+.form-control {
+    height: 42px;
+    font-size: 15px;
+    padding: 10px 14px;
+}
+
+
+/* Reduce spacing between fields */
+
+.form-group {
+    margin-bottom: 16px;
+}
+
+
+/* Buttons */
+
+.form-buttons button {
+    height: 45px !important;
+    width: 140px !important;
+    font-size: 14px !important;
+}
+/* ================= LOGIN & REGISTER FIX ================= */
+
+.login-box,
+.register-page{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+.auth-box form{
+    width:100%;
+}
+
+.auth-box h2{
+    text-align:center;
+    color:#1b5e20;
+    font-size:32px;
+    font-weight:700;
+    margin-bottom:30px;
+}
+
+.auth-box .form-group{
+    margin-bottom:22px;
+}
+
+.auth-box label{
+    display:flex;
+    align-items:center;
+    gap:8px;
+    font-size:15px;
+    font-weight:600;
+    color:#2f2f2f;
+    margin-bottom:8px;
+}
+
+.auth-box .form-control{
+    width:100%;
+    height:50px;
+    border:1px solid #d7d7d7;
+    border-radius:12px;
+    background:#fff;
+    padding:0 18px;
+    font-size:15px;
+    transition:.3s;
+}
+
+.auth-box .form-control:focus{
+    border-color:#2e7d32;
+    box-shadow:0 0 8px rgba(46,125,50,.18);
+}
+
+/* Login & Create Account Button */
+
+.login-btn{
+    width:100%;
+    height:50px;
+    background:#2e7d32;
+    color:#fff;
+    border:none;
+    border-radius:12px;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+    margin-top:10px;
+    transition:.3s;
+}
+
+.login-btn:hover{
+    background:#1b5e20;
+}
+
+/* Bottom Section */
+
+.register-section{
+    text-align:center;
+    margin-top:28px;
+}
+
+.register-section h5{
+    font-size:16px;
+    color:#333;
+    margin-bottom:12px;
+    font-weight:600;
+}
+
+/* Outline Button */
+
+.register-btn{
+    width:100%;
+    height:50px;
+    background:#fff;
+    color:#2e7d32;
+    border:2px solid #2e7d32;
+    border-radius:12px;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+    transition:all 0.3s ease;
+}
+
+.register-btn:hover{
+    background:#2e7d32;
+    color:#fff;
+    border-color:#2e7d32;
+}
+
+.error-text{
+    margin-top:6px;
+    color:#d32f2f;
+    font-size:13px;
+}
+
+.success-message{
+    margin-top:25px;
+    text-align:center;
+}
+
+.success-message p{
+    color:#2e7d32;
+    font-weight:600;
+    margin-bottom:15px;
+}
+
+.auth-left{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.auth-left h1{
+    font-size:72px;
+    margin-bottom:12px;
+}
+
+.auth-left h3{
+    font-size:34px;
+    font-weight:700;
+    margin-bottom:12px;
+}
+
+.auth-left p{
+    width:340px;
+    font-size:18px;
+    line-height:1.6;
+    color:#666;
+}
+/* Crop Yield Badge */
+
+.yield-badge{
+    display:inline-block;
+    padding:6px 14px;
+    border-radius:20px;
+    background:#e8f5e9;
+    color:#2e7d32;
+    font-weight:700;
+    font-size:14px;
+}
+.card-icon{
+
+    width:90px;
+    height:90px;
+
+    border-radius:50%;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:42px;
+
+    margin:0 auto 20px;
+
+    color:white;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+}
+.action-buttons {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
+}
+
+.predict-btn,
+.input-btn,
+.delete-btn {
+    border: none;
+    padding: 10px 16px;
+    border-radius: 6px;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.predict-btn {
+    background-color: #f5b900;
+}
+
+.input-btn {
+    background-color: #168b5b;
+}
+
+.delete-btn {
+    background-color: #dc3545;
+}
+
+.predict-btn:hover,
+.input-btn:hover,
+.delete-btn:hover {
+    opacity: 0.85;
+}
+.save-btn {
+    background: linear-gradient(135deg, #198754, #2e9d62);
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 7px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 3px 8px rgba(25, 135, 84, 0.2);
+    transition: all 0.2s ease;
+}
+
+.save-btn:hover {
+    background: linear-gradient(135deg, #157347, #258653);
+    transform: translateY(-1px);
+    box-shadow: 0 5px 12px rgba(25, 135, 84, 0.3);
+}
+
+.save-btn:active {
+    transform: translateY(0);
+}
+
+
+.expense-btn {
+    background-color: #6c5ce7;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.expense-btn:hover {
+    opacity: 0.9;
+}
+
+.action-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+}
+
+.list-card {
+    overflow-x: auto;
+}

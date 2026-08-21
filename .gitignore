@@ -1,0 +1,10 @@
+**/src/main/resources/application.properties
+.metadata/
+.idea/
+.env
+.venv/
+target/
+node_modules/
+*.db
+*.pyc
+__pycache__/

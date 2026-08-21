@@ -1,0 +1,244 @@
+/* ================= REPORT PAGE ================= */
+
+.report-container {
+    min-height: 100vh;
+    padding: 40px;
+    background: linear-gradient(135deg, #e8f5e9, #fffde7);
+    font-family: 'Poppins', sans-serif;
+    color: #1b4332;
+}
+
+
+/* ================= HEADER ================= */
+
+.report-title {
+    text-align: center;
+    font-size: 38px;
+    font-weight: 700;
+    color: #1b4332;
+    margin-bottom: 5px;
+}
+
+.report-subtitle {
+    text-align: center;
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 35px;
+}
+
+
+/* ================= SUMMARY CARDS ================= */
+
+.summary-section {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+
+.summary-card {
+    width: 230px;
+    background: white;
+    border-radius: 18px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+    transition: 0.3s;
+}
+
+
+.summary-card:hover {
+    transform: translateY(-8px);
+}
+
+
+.summary-icon {
+    font-size: 35px;
+}
+
+
+.summary-card h2 {
+    font-size: 22px;
+    margin: 10px 0;
+}
+
+
+.summary-count {
+    font-size: 42px;
+    font-weight: bold;
+    color: #2e7d32;
+}
+
+
+
+/* ================= DETAILS SECTION ================= */
+
+.details-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+}
+
+
+.detail-card {
+
+    width: 85%;
+    background:white;
+    padding:25px;
+    border-radius:20px;
+
+    box-shadow:
+    0 10px 25px rgba(0,0,0,0.12);
+
+}
+
+
+.detail-title {
+
+    text-align:center;
+    font-size:26px;
+    margin-bottom:20px;
+    color:#1b4332;
+
+}
+
+
+
+/* ================= TABLE ================= */
+
+.report-table {
+
+    width:100%;
+    border-collapse:collapse;
+    overflow:hidden;
+    border-radius:15px;
+
+}
+
+
+.report-table th {
+
+    background:#2e7d32;
+    color:white;
+    padding:14px;
+    font-size:16px;
+
+}
+
+
+.report-table td {
+
+    padding:13px;
+    text-align:center;
+    border-bottom:1px solid #ddd;
+
+}
+
+
+.report-table tr:hover {
+
+    background:#f1f8e9;
+
+}
+
+
+/* ================= DATE ================= */
+
+.generated-date {
+
+    text-align:center;
+    margin-top:35px;
+    font-size:16px;
+    font-weight:500;
+
+}
+
+
+
+/* ================= BUTTONS ================= */
+
+
+.report-buttons {
+
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    margin-top:25px;
+
+}
+
+
+.print-btn,
+.back-btn {
+
+    padding:13px 35px;
+    border-radius:30px;
+    border:none;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+    transition:0.3s;
+
+}
+
+
+.print-btn {
+
+    background:#2e7d32;
+    color:white;
+
+}
+
+
+.print-btn:hover {
+
+    background:#1b5e20;
+
+}
+
+
+.back-btn {
+
+    background:white;
+    color:#2e7d32;
+    border:1px solid #2e7d32;
+
+}
+
+
+.back-btn:hover {
+
+    background:#e8f5e9;
+
+}
+
+
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:768px){
+
+    .summary-section{
+
+        flex-direction:column;
+        align-items:center;
+
+    }
+
+
+    .detail-card{
+
+        width:95%;
+
+    }
+
+
+    .report-table{
+
+        font-size:12px;
+
+    }
+
+}
