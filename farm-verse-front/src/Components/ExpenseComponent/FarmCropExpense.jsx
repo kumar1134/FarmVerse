@@ -184,19 +184,19 @@ const agroTools = Number(
                 // =====================================================
 
                 const waterRate =
-                    getRate("waterGallon");
+                    getRate("Water");
 
                 const fertilizerRate =
                     getRate("fertilizer");
 
                 const pesticidesRate =
-                    getRate("pesticides");
+                    getRate("Pesticide");
 
                 const tractorRate =
-                    getRate("tractorHour");
+                    getRate("Tractor");
 
                 const agroToolsRate =
-                    getRate("agroTools");
+                    getRate("AgriculturalTools");
 
                 console.log("DATABASE RATES:", {
                     waterRate,
